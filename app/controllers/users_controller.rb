@@ -69,11 +69,14 @@ class UsersController < ApplicationController
 
     # show projects based on current user visibility
     @memberships = @user.memberships.where(Project.visible_condition(User.current)).to_a
+    @events_by_day = []
 
     respond_to do |format|
       format.html {
-        events = Redmine::Activity::Fetcher.new(User.current, :author => @user).events(nil, nil, :limit => 10)
-        @events_by_day = events.group_by(&:event_date)
+        if User.current.allowed_to?(:view_activity, nil, :global => true)
+          events = Redmine::Activity::Fetcher.new(User.current, :author => @user).events(nil, nil, :limit => 10)
+          @events_by_day = events.group_by(&:event_date)
+        end
         render :layout => 'base'
       }
       format.api

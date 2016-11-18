@@ -843,6 +843,7 @@ nl:
   error_workflow_copy_source: Selecteer een bron tracker of rol
   label_update_issue_done_ratios: Update issue percentage voldaan
   setting_start_of_week: Week begint op
+  permission_view_activity: Bekijk Activiteit
   permission_view_issues: Bekijk Issues
   label_display_used_statuses_only: Laat alleen statussen zien die gebruikt worden door deze tracker
   label_revision_id: Revisie %{value}

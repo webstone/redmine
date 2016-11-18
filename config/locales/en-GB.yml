@@ -382,6 +382,7 @@ en-GB:
   permission_manage_project_activities: Manage project activities
   permission_manage_versions: Manage versions
   permission_manage_categories: Manage issue categories
+  permission_view_activity: View Activity
   permission_view_issues: View Issues
   permission_add_issues: Add issues
   permission_edit_issues: Edit issues

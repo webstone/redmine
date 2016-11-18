@@ -18,6 +18,7 @@
 class ActivitiesController < ApplicationController
   menu_item :activity
   before_filter :find_optional_project
+  before_filter :authorize_global, :only => [ :index ]
   accept_rss_auth :index
 
   def index
