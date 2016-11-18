@@ -1187,3 +1187,4 @@ nl:
   label_font_default: Standaardlettertype
   label_font_monospace: Monospaced-lettertype
   label_font_proportional: Proportioneel lettertype
+  setting_timespan_format: Tijdspanneformaat
