@@ -428,7 +428,7 @@ nl:
   label_issue_status_plural: Issuestatussen
   label_issue_tracking: Issue tracking
   label_issue_updated: Issue bijgewerkt
-  label_issue_view_all: Bekijk alle issues
+  label_issue_view_all: Alle issues bekijken
   label_issue_watchers: Volgers
   label_issues_by: "Issues door %{value}"
   label_jump_to_a_project: Ga naar een project...
@@ -798,7 +798,7 @@ nl:
   mail_body_wiki_content_updated: De '%{id}' wikipagina is bijgewerkt door %{author}.
   permission_add_project: Maak project
   setting_new_project_user_role_id: Rol van gebruiker die een project maakt
-  label_view_all_revisions: Bekijk alle revisies
+  label_view_all_revisions: Alle revisies bekijken
   label_tag: Tag
   label_branch: Branch
   error_no_tracker_in_project: Geen tracker is geassocieerd met dit project. Check de projectinstellingen.
@@ -843,7 +843,7 @@ nl:
   error_workflow_copy_source: Selecteer een brontracker of rol
   label_update_issue_done_ratios: Update issue-voltooiingspercentage
   setting_start_of_week: Week begint op
-  permission_view_issues: Bekijk issues
+  permission_view_issues: Issues bekijken
   label_display_used_statuses_only: Alleen statussen weergeven die gebruikt worden door deze tracker
   label_revision_id: Revisie %{value}
   label_api_access_key: API-toegangssleutel
@@ -1035,7 +1035,7 @@ nl:
   label_any_issues_in_project: alle issues in project
   label_any_issues_not_in_project: alle issues niet in project
   field_private_notes: Privénotities
-  permission_view_private_notes: Bekijk privénotities
+  permission_view_private_notes: Privénotities bekijken
   permission_set_notes_private: Notities privé maken
   label_no_issues_in_project: geen issues in project
   label_any: alle
