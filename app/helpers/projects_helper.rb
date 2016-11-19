@@ -48,24 +48,17 @@ module ProjectsHelper
   end
 
   def render_project_action_links
-    links = []
+    links = "".html_safe
     if User.current.allowed_to?(:add_project, nil, :global => true)
       links << link_to(l(:label_project_new), new_project_path, :class => 'icon icon-add')
     end
-    if User.current.allowed_to?(:view_issues, nil, :global => true)
-      links << link_to(l(:label_issue_view_all), issues_path)
-    end
-    if User.current.allowed_to?(:view_time_entries, nil, :global => true)
-      links << link_to(l(:label_overall_spent_time), time_entries_path)
-    end
-    links << link_to(l(:label_overall_activity), activity_path)
-    links.join(" | ").html_safe
+    links
   end
 
   # Renders the projects index
   def render_project_hierarchy(projects)
     render_project_nested_lists(projects) do |project|
-      s = link_to_project(project, {}, :class => "#{project.css_classes} #{User.current.member_of?(project) ? 'my-project' : nil}")
+      s = link_to_project(project, {}, :class => "#{project.css_classes} #{User.current.member_of?(project) ? 'icon icon-fav my-project' : nil}")
       if project.description.present?
         s << content_tag('div', textilizable(project.short_description, :project => project), :class => 'wiki description')
       end
